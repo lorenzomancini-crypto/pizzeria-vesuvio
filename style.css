@@ -180,3 +180,135 @@ body {
 .btn:hover {
     background-color: #333;
 }
+/* Reset di base e font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333333;
+    line-height: 1.6;
+    padding: 2rem 1rem;
+}
+
+/* Header del Menu */
+.menu-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.menu-header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.menu-header p {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+/* Griglia dei Contenitori */
+.menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Card delle Bevande */
+.drink-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.drink-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Immagini segnaposto con gradienti di colore moderni */
+.drink-image {
+    height: 200px;
+    width: 100%;
+}
+
+.bg-mochaccino {
+    background: linear-gradient(135deg, #4a3728, #2b1d12);
+}
+
+.bg-lemon-mint {
+    background: linear-gradient(135deg, #f1c40f, #d4ac0d);
+}
+
+.bg-matcha-latte {
+    background: linear-gradient(135deg, #a3cb38, #009432);
+}
+
+/* Contenuto testuale della Card */
+.drink-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.drink-category {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #95a5a6;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.drink-title {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin-bottom: 0.75rem;
+}
+
+.drink-description {
+    font-size: 0.95rem;
+    color: #555555;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+/* Sezione Ingredienti */
+.ingredients-section h3 {
+    font-size: 0.9rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.ingredients-list {
+    list-style: none;
+}
+
+.ingredients-list li {
+    font-size: 0.9rem;
+    color: #27ae60;
+    font-weight: 600;
+    padding-left: 1.2rem;
+    position: relative;
+    margin-bottom: 0.25rem;
+}
+
+.ingredients-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #2ecc71;
+}
+
